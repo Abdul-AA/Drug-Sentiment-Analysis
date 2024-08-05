@@ -9,7 +9,7 @@ The goal of this project is to explore the sentiments and topics discussed in bi
 To achieve the overarching goal, several techniques were employed:
 
 1. **Sentiment Analysis**: Analyzing the sentiment of reviews using a fine-tuned DistilBERT model. Reviews were grouped into positive and negative categories.
-2. **Topic Modeling**: Identifying prevalent topics or themes in the reviews using LDA topic modeling. This helps in understanding what users are actually discussing about the medication.
+2. **Topic Modeling**: Identifying prevalent topics or themes in the reviews using Latent Dirichlet Allocations (LDA) topic modeling. This helps in understanding what users are actually discussing about the medication.
 3. **Visualization**: Creating an interactive dashboard in Tableau to present insights from the analysis in a clear and accessible manner.
 
 ## The Resulting Dashboard
@@ -24,7 +24,7 @@ The dashboard consists of two main pages: an overview page and a detailed topic 
 
   ![Detailed Topic Analysis](Images/db2.png)
 
-## Sentiment Analysis
+## Sentiment Analysis Technique
 
 For sentiment analysis, the fine-tuned [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english) model on Hugging Face was used, achieving state-of-the-art accuracy of 91.3% on the SST-2 dataset. This model was employed to predict the sentiment of each review, with confidence scores obtained to validate the predictions. The preprocessing steps were managed through the pipeline library available in the Transformers library, which handles essential preprocessing tasks. HTML tags were found and removed from the texts, but stop words were not removed as the transformer-based model handles them and requires them for contextual understanding.
 
