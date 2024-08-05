@@ -16,9 +16,9 @@ The goal of this project was to explore the sentiments and topics discussed in b
 The dashboard offers detailed insights through two pages:
 
 - **Overview Dashboard**: Summarizes key metrics and provides a broad view of the overall review data and discerned themes and sentiments2.
-### ![Overview Dashboard](/Users/Abdul/Desktop/Drug-Sentiment-Analysis/Images/db1.png)
+### ![Overview Dashboard](Images/db1.png)
 - **Detailed Topic Analysis**: Presents an in-depth examination of the identified topics in the reviews.
-### ![Detailed Topic Analysis](/Users/Abdul/Desktop/Drug-Sentiment-Analysis/Images/db2.png)
+### ![Detailed Topic Analysis](Images/db2.png)
 
 ## Sentiment Analysis
 
@@ -47,7 +47,7 @@ For topic modeling, Latent Dirichlet Allocation (LDA) was used due to its simpli
    - Selected the number of topics based on coherence and perplexity scores.
    - Chose three topics due to their high coherence score of 0.46, despite high perplexity, based on manual review of representative documents.
 
-### ![Coherence Score Plot](/Users/Abdul/Desktop/Drug-Sentiment-Analysis/Images/Cs.png)
+### ![Coherence Score Plot](Images/Cs.png)
 
 ## Insights
 
