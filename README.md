@@ -4,7 +4,7 @@ Birth control drugs are among the most reviewed on drugs.com, partly due to the 
 
 ## Project Overview
 
-The goal of this project was to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from drugs.com. However, a pre-scraped dataset from UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) was found, which was sufficient for exploratory analysis and proof of concept. The project methodology includes:
+The goal of this project is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from drugs.com. However, a pre-scraped dataset from UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) was found, which was sufficient for exploratory analysis and proof of concept. The project methodology includes:
 
 1. **Data Acquisition**: Utilizing the existing dataset.
 2. **Sentiment Analysis**: Analyzing the sentiment of reviews using a fine-tuned DistilBERT model.
@@ -22,9 +22,7 @@ The dashboard offers detailed insights through two pages:
 
 ## Sentiment Analysis
 
-For sentiment analysis, the [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english) pipeline was used, which has achieved state-of-the-art accuracy of 91.3% on the SST-2 dataset. This model was employed to predict the sentiment of each review, and confidence scores were obtained to validate the predictions.
-
-
+For sentiment analysis, the fine-tuned [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english) model was used, which has achieved state-of-the-art accuracy of 91.3% on the SST-2 dataset. This model was employed to predict the sentiment of each review, and confidence scores were obtained to validate the predictions.
 
 ## LDA Topic Modeling
 
