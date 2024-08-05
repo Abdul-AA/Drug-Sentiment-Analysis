@@ -9,7 +9,7 @@ The goal of this project was to explore the sentiments and topics discussed in b
 1. **Data Acquisition**: Utilizing the existing dataset.
 2. **Sentiment Analysis**: Analyzing the sentiment of reviews using a fine-tuned DistilBERT model.
 3. **Topic Modeling**: Identifying prevalent topics in the reviews using LDA.
-4. **Visualization**: Creating a dashboard to present insights from the analysis.
+4. **Visualization**: Creating an interactive dashboard in Tableau to present insights from the analysis.
 
 ## Insights from the Dashboard
 
