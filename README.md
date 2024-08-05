@@ -57,6 +57,10 @@ Latent Dirichlet Allocation (LDA) was used for topic modeling due to its simplic
 - **Topic 2: "Bleeding and Cycle Issues"** - Reviews discussed terms such as bleeding and cramps, relating to the drug's effect on bleeding and menstrual cycle issues.
 - **Topic 3: "Pain and Insertion Issues"** - Reviews highlighted pain and discomfort, particularly related to drug ingestion or the insertion of devices.
 
-## Next Steps
+## Threats to Validity and Next Steps
 
 Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights.
+
+## Access the Dashboard
+You can interact with the dashboard using the following link: [Comprehensive Analysis of Birth Control Drug Reviews: Sentiments and Topics](https://public.tableau.com/views/ComprehensiveAnalysisofBirthControlDrugReviewsSentimentsandTopics/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+
