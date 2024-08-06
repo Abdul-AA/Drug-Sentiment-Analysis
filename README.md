@@ -4,7 +4,7 @@ Birth control drugs are among the most reviewed on Drugs.com, likely due to the 
 
 ## Project Overview
 
-The goal is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from Drugs.com. However, a pre-scraped dataset from UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) spanning 2008-2017 was found, which was sufficient for exploratory analysis and proof of concept. The dataset also contains user ratings ranging from 1 to 10 and was collected between 2008 and 2017.
+The goal is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from Drugs.com. However, a pre-scraped dataset containining 15,349 birth control drug reviews was found on UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) spanning 2008-2017, which was sufficient for exploratory analysis and proof of concept. The dataset also contains user ratings ranging from 1 to 10 and was collected between 2008 and 2017.
 
 To achieve the overarching goal, several techniques were employed:
 
@@ -12,17 +12,49 @@ To achieve the overarching goal, several techniques were employed:
 2. **Topic Modeling**: Identifying prevalent topics or themes in the reviews using Latent Dirichlet Allocations (LDA) topic modeling. This helps in understanding what users are actually discussing about the medication.
 3. **Visualization**: Creating an interactive dashboard in Tableau to present insights from the analysis in a clear and accessible manner.
 
-## The Resulting Dashboard
+## The Resulting Dashboards
 
-The dashboard consists of two main pages: an overview page and a detailed topic analysis page.
+The report consists of two pages: an overview page and a detailed topic analysis page.
 
 - **Overview Dashboard**: Summarizes key metrics and provides a broad view of the overall review data and discerned sentiments. It shows metrics such as the number of reviews, average ratings, number of drugs, and the distribution of positive and negative reviews. It also compares these metrics across different drugs and time periods, allowing for detailed comparisons. See the overview page below:
 
   ![Overview Dashboard](Images/db1.png)
 
-- **Detailed Topic Analysis**: Offers an in-depth examination of the identified topics in the reviews. It features metrics such as the number of topics and the distribution of sentiments within each topic. This helps to determine whether users are discussing ongoing issues (negative sentiment) or resolved issues (positive sentiment). For instance, a review mentioning that bleeding and side effects have stopped after using the drug reflects a positive sentiment, even though the topic may appear problematic. The page also includes average ratings across topics and temporal analysis to show how sentiment distribution has evolved over time. See the topic analysis page below:
+- **Detailed Topic Analysis Dashboard**: Offers an in-depth examination of the identified topics in the reviews. It features metrics such as the number of topics and the distribution of sentiments within each topic. This helps to determine whether users are discussing ongoing issues (negative sentiment) or resolved issues (positive sentiment). For instance, a review mentioning that bleeding and side effects have stopped after using the drug reflects a positive sentiment, even though the topic may appear problematic. The page also includes average ratings across topics and temporal analysis to show how sentiment distribution has evolved over time. See the topic analysis page below:
 
   ![Detailed Topic Analysis](Images/db2.png)
+
+# Summary of Learnings
+
+The analysis of the 15,349 birth control drug reviews from Drugs.com provided the follwoing key insights into user experiences and sentiments:
+
+## Sentiment Distribution
+
+- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to side effects.
+
+## Key Topics/Themes in the Reviews
+
+- **Weight Gain and Side Effects**: Many users reported concerns about weight gain and other side effects.
+- **Bleeding and Cycle Issues**: A significant number of reviews highlighted problems related to bleeding and menstrual cycles.
+- **Pain and Insertion Issues**: Users frequently discussed pain, particularly related to drug ingestion or device insertion.
+
+  It is important to note that even within these common issues, some reviews discuss the resolution of these problems, reflecting positive sentiments despite the problematic topics.
+
+## Drug Comparisons
+
+- **Most Reviewed Drugs**: Etonogestrel and Ethinyl estradiol/norethindrone were the most reviewed drugs.
+- **Highest Ratings**: Levonorgestrel received the highest average ratings among the drugs analyzed.
+- **Ethinyl Estradiol/Norethindrone**: This combination was frequently associated with weight gain and side effects, as well as bleeding and cycle issues, possibly due to its oral route of administration.
+- **Highest Proportion of Positive Sentiments**: Levonorgestrel had the highest proportion of positive reviews, with 30% (878 out of 2,884) of reviews being positive.This is interesting because it also the drug with the highest user ratings. It had the highest average user rating of 7, which is higher than the overall average rating of 6.
+- **Highest Proportion of Negative Sentiments**: Nexplanon had the highest proportion of negative reviews, with 77% (2,222 out of 2,883) of reviews being negative.
+
+## Trends Over Time
+
+- **Review Volume**: There was a noticeable increase in the number of reviews over time, peaking around 2015. This suggests a growing user engagement and reporting on birth control experiences.
+- **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences. The increase in negative sentiments over time warrants further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
+
+These insights offer valuable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
+
 
 ## Sentiment Analysis Technique
 
@@ -59,8 +91,9 @@ Latent Dirichlet Allocation (LDA) was used for topic modeling due to its simplic
 
 ## Threats to Validity and Next Steps
 
-Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights.
+- Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights. 
+- Further investigation is recommended to understand the reasons behind the drastic increase in the proportion of negative sentiments over the years.
 
-## Access the Dashboard
-You can interact with the dashboard using the following link: [Which Issues and Sentiments Dominate Birth Control Drug Discussions](https://public.tableau.com/views/WhichIssuesandSentimentsDominateBirthControlDrugDiscussions/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+## Access the Dashboards
+You can interact with the dashboards using the following link: [Which Issues and Sentiments Dominate Birth Control Drug Discussions](https://public.tableau.com/views/WhichIssuesandSentimentsDominateBirthControlDrugDiscussions/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
