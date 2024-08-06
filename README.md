@@ -62,5 +62,5 @@ Latent Dirichlet Allocation (LDA) was used for topic modeling due to its simplic
 Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights.
 
 ## Access the Dashboard
-You can interact with the dashboard using the following link: [Comprehensive Analysis of Birth Control Drug Reviews: Sentiments and Topics](https://public.tableau.com/views/ComprehensiveAnalysisofBirthControlDrugReviewsSentimentsandTopics/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+You can interact with the dashboard using the following link: [Which Issues and Sentiments Dominate Birth Control Drug Discussions](https://public.tableau.com/views/WhichIssuesandSentimentsDominateBirthControlDrugDiscussions/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
