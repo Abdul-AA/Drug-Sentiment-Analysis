@@ -24,6 +24,39 @@ The report consists of two pages: an overview page and a detailed topic analysis
 
   ![Detailed Topic Analysis](Images/db2.png)
 
+# Summary of Learnings
+
+The analysis of the 15,349 birth control drug reviews from Drugs.com provided the follwoing key insights into user experiences and sentiments:
+
+## Sentiment Distribution
+
+- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to side effects.
+
+## Key Themes
+
+- **Weight Gain and Side Effects**: Many users reported concerns about weight gain and other side effects.
+- **Bleeding and Cycle Issues**: A significant number of reviews highlighted problems related to bleeding and menstrual cycles.
+- **Pain and Insertion Issues**: Users frequently discussed pain, particularly related to drug ingestion or device insertion.
+
+  It is important to note that even within these common issues, some reviews discuss the resolution of these problems, reflecting positive sentiments despite the problematic topics.
+
+## Drug Comparisons
+
+- **Most Reviewed Drugs**: Etonogestrel and Ethinyl estradiol/norethindrone were the most reviewed drugs.
+- **Highest Ratings**: Levonorgestrel received the highest average ratings among the drugs analyzed.
+- **Ethinyl Estradiol/Norethindrone**: This combination was frequently associated with weight gain and side effects, as well as bleeding and cycle issues, possibly due to its oral route of administration.
+- **Highest Proportion of Positive Sentiments**: Levonorgestrel had the highest proportion of positive reviews, with 30% (878 out of 2,884) of reviews being positive.This is interesting because it also the drug with the highest user ratings. It had the highest average user rating of 7, which is higher than the overall average rating of 6.
+- **Highest Proportion of Negative Sentiments**: Nexplanon had the highest proportion of negative reviews, with 77% (2,222 out of 2,883) of reviews being negative.
+
+## Trends Over Time
+
+- **Review Volume**: There was a noticeable increase in the number of reviews over time, peaking around 2015. This suggests a growing user engagement and reporting on birth control experiences.
+- **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences.
+- **Further Analysis Needed**: The increase in negative sentiments over time warrants further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
+
+These insights offer valuable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
+
+
 ## Sentiment Analysis Technique
 
 For sentiment analysis, the fine-tuned [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english) model on Hugging Face was used, achieving state-of-the-art accuracy of 91.3% on the SST-2 dataset. This model was employed to predict the sentiment of each review, with confidence scores obtained to validate the predictions. The preprocessing steps were managed through the pipeline library available in the Transformers library, which handles essential preprocessing tasks. HTML tags were found and removed from the texts, but stop words were not removed as the transformer-based model handles them and requires them for contextual understanding.
@@ -59,7 +92,8 @@ Latent Dirichlet Allocation (LDA) was used for topic modeling due to its simplic
 
 ## Threats to Validity and Next Steps
 
-Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights.
+- Currently, the insights might be biased as they are obtained from a single source. Acquiring data from multiple sources would provide a more representative sample and, in turn, more robust insights. 
+- Further investigation is recommended to understand the reasons behind the drastic increase in the proportion of negative sentiments over the years.
 
 ## Access the Dashboards
 You can interact with the dashboards using the following link: [Which Issues and Sentiments Dominate Birth Control Drug Discussions](https://public.tableau.com/views/WhichIssuesandSentimentsDominateBirthControlDrugDiscussions/Overview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
