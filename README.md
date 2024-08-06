@@ -52,7 +52,8 @@ The analysis of the 15,349 birth control drug reviews from Drugs.com provided th
 
 - **Review Volume**: There was a noticeable increase in the number of reviews over time, peaking around 2015. This suggests a growing user engagement and reporting on birth control experiences.
 - **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences.
-- **Further Analysis Needed**: The increase in negative sentiments over time warrants further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
+  
+- The increase in negative sentiments over time warrants further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
 
 These insights offer valuable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
 
