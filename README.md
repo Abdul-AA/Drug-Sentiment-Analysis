@@ -4,7 +4,7 @@ Birth control drugs are among the most reviewed on Drugs.com, likely due to the 
 
 ## Project Overview
 
-The goal is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from Drugs.com. However, a pre-scraped dataset from UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) spanning 2008-2017 was found, which was sufficient for exploratory analysis and proof of concept. The dataset also contains user ratings ranging from 1 to 10 and was collected between 2008 and 2017.
+The goal is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from Drugs.com. However, a pre-scraped dataset containining 15,349 birth control drug reviews was found on UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) spanning 2008-2017, which was sufficient for exploratory analysis and proof of concept. The dataset also contains user ratings ranging from 1 to 10 and was collected between 2008 and 2017.
 
 To achieve the overarching goal, several techniques were employed:
 
