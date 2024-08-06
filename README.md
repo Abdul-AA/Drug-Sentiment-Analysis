@@ -32,7 +32,7 @@ The analysis of the 15,349 birth control drug reviews from Drugs.com provided th
 
 - The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to side effects.
 
-## Key Themes
+## Key Topics/Themes in the Reviews
 
 - **Weight Gain and Side Effects**: Many users reported concerns about weight gain and other side effects.
 - **Bleeding and Cycle Issues**: A significant number of reviews highlighted problems related to bleeding and menstrual cycles.
