@@ -30,31 +30,30 @@ The analysis of the 15,349 birth control drug reviews from Drugs.com provided th
 
 ## Sentiment Distribution
 
-- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to side effects.
+- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to the myriad side effects associated with birth control.
 
 ## Key Topics/Themes in the Reviews
 
-- **Weight Gain and Side Effects**: Many users reported concerns about weight gain and other side effects.
+- **Weight Gain and Side Effects**: Many users discussed concerns about weight gain and other general side effects.
 - **Bleeding and Cycle Issues**: A significant number of reviews highlighted problems related to bleeding and menstrual cycles.
-- **Pain and Insertion Issues**: Users frequently discussed pain, particularly related to drug ingestion or device insertion.
+- **Pain and Insertion Issues**: Users also discussed pain, particularly related to birth control device insertion.
 
-  It is important to note that even within these common issues, some reviews discuss the resolution of these problems, reflecting positive sentiments despite the problematic topics.
+  It is important to note that even within these common seemingly problematic topics, some reviews discussed the resolution of these problems, reflecting positive sentiments despite the problematic topics.
 
-## Drug Comparisons
+## Comparisons Between Drugs/Methods
 
 - **Most Reviewed Drugs**: Etonogestrel and Ethinyl estradiol/norethindrone were the most reviewed drugs.
-- **Highest Ratings**: Levonorgestrel received the highest average ratings among the drugs analyzed.
-- **Ethinyl Estradiol/Norethindrone**: This combination was frequently associated with weight gain and side effects, as well as bleeding and cycle issues, possibly due to its oral route of administration.
+- **Highest Ratings**: Levonorgestrel was the highest average user ratings among the drugs analyzed.
+- **Ethinyl Estradiol/Norethindrone**: This combination was only associated with two topics weight gain and side effects, as well as bleeding and cycle issues, possibly due to its oral route of administration. In other words, the reviews of this durg did not entail discussions on pain and insertion issues
 - **Highest Proportion of Positive Sentiments**: Levonorgestrel had the highest proportion of positive reviews, with 30% (878 out of 2,884) of reviews being positive.This is interesting because it also the drug with the highest user ratings. It had the highest average user rating of 7, which is higher than the overall average rating of 6.
 - **Highest Proportion of Negative Sentiments**: Nexplanon had the highest proportion of negative reviews, with 77% (2,222 out of 2,883) of reviews being negative.
 
 ## Trends Over Time
 
-- **Review Volume**: There was a noticeable increase in the number of reviews over time, peaking around 2015. This suggests a growing user engagement and reporting on birth control experiences.
-- **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences. The increase in negative sentiments over time warrants further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
+- **Review Volume**: There was a substantial increase in the number of reviews over time, peaking around 2015. This indicates a growing user engagement and reporting on birth control experiences perhaps because people are getting more educated on the different contraceptive methods that are available.
+- **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences. The increase in negative sentiments over time calls for further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
 
-These insights offer valuable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
-
+These insights offer invaluable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
 
 ## Sentiment Analysis Technique
 
@@ -69,25 +68,25 @@ Latent Dirichlet Allocation (LDA) was used for topic modeling due to its simplic
    - Removed multiple white spaces and line breaks.
    - Tokenized the text into individual words using NLTK’s `word_tokenize`.
    - Removed non-alphabetic tokens.
-   - Used NLTK's stopword list and added custom stopwords.
+   - Used NLTK's stopword list and added custom stopwords, which are corpus specific. For example, words like birth control, drug etc were removed as they do not carry any valuable information to this use case.
    - Removed stopwords from the tokenized text.
-   - Created bigrams and trigrams using Gensim's `Phrases` and `Phraser`.
-   - Lemmatized the text using SpaCy, retaining only nouns, adjectives, verbs, and adverbs.
-   - Applied the preprocessing pipeline to the DataFrame's `review` column.
+   - Created bigrams and trigrams using Gensim's `Phrases` and `Phraser` to capture more range of tokens.
+   - Lemmatized the text using SpaCy
+   - Applied the preprocessing pipeline to the reviews
    - Created a dictionary (`id2word`) and filtered extremes to remove words appearing in fewer than 50 documents or more than 50% of the documents.
    - Created a corpus representing each document as a list of tuples with word IDs and their frequencies.
 
 2. **Topic Selection**:
    - Selected the number of topics based on coherence and perplexity scores.
-   - Chose three topics due to their high coherence score of 0.46, despite high perplexity, based on manual review of representative documents.
+   - Chose 3 topics because this choice resulted in the highest coherence score of 0.46 as shown below. Despite the relatively high perplexity of the 3 topics, a manual review of representative documents of each topic reinforced the decision to go with 3 topics.
 
   ![Coherence Score Plot](Images/Cs.png)
 
 ## Topics Inferred from the Reviews
-
-- **Topic 1: "Weight Gain and Side Effects"** - Reviews often mentioned terms like weight and gain, focusing on the impact of the drug on weight and other side effects.
-- **Topic 2: "Bleeding and Cycle Issues"** - Reviews discussed terms such as bleeding and cramps, relating to the drug's effect on bleeding and menstrual cycle issues.
-- **Topic 3: "Pain and Insertion Issues"** - Reviews highlighted pain and discomfort, particularly related to drug ingestion or the insertion of devices.
+The following are the themes inferred from the three topics and the recurring words in the documents that make up the topics:
+- **Topic 0: "Weight Gain and Side Effects"** - Reviews often mentioned words like weight and gain, focusing on the impact of the drug on weight and other general side effects.
+- **Topic 1: "Bleeding and Cycle Issues"** - Reviews discussed words such as bleeding and cramps, relating to the drug's effect on bleeding and menstrual cycle issues.
+- **Topic 2: "Pain and Insertion Issues"** - Reviews highlighted pain and discomfort, particularly related to insertion of birth control devices.
 
 ## Threats to Validity and Next Steps
 
