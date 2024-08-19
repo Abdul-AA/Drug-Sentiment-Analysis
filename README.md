@@ -1,10 +1,6 @@
 # Birth Control Drug Reviews Analysis
 
-Birth control drugs are among the most reviewed on Drugs.com, likely due to the high likelihood of uncomfortable side effects associated with them. My motivation for this project is to analyze reviews for popular birth control drugs on Drugs.com to provide insights into user experiences with these options.
-
-## Project Overview
-
-The goal is to explore the sentiments and topics discussed in birth control drug reviews. Initially, the plan was to scrape data directly from Drugs.com. However, a pre-scraped dataset containining 15,349 birth control drug reviews was found on UCI ML ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) spanning 2008-2017, which was sufficient for exploratory analysis and proof of concept. The dataset also contains user ratings ranging from 1 to 10 and was collected between 2008 and 2017.
+Birth control drugs are among the most frequently reviewed on Drugs.com, likely due to their widespread use. According to a survey conducted by the Centers for Disease Control and Prevention (CDC) between 2017 and 2019, around 65% of women aged 15-49 use birth control, with 14% of them opting for the pill. My motivation for this project is to analyze reviews of popular birth control drugs on Drugs.com to gain insights into user experiences with these options. The goal is to explore the sentiments and topics discussed in these reviews. For this analysis, I’m using a pre-scraped dataset from UCI ML that contains 15,349 birth control drug reviews and user ratings ranging from 1 to 10, collected between 2008 and 2017 ([Drug Review Dataset](https://archive.ics.uci.edu/dataset/462/drug+review+dataset+drugs+com)) 
 
 To achieve the overarching goal, several techniques were employed:
 
@@ -26,7 +22,7 @@ The report consists of two pages: an overview page and a detailed topic analysis
 
 # Summary of Learnings
 
-The analysis of the 15,349 birth control drug reviews from Drugs.com provided the follwoing key insights into user experiences and sentiments:
+The analysis of the 15,349 birth control drug reviews from Drugs.com provided the following key insights into user experiences and sentiments:
 
 ## Sentiment Distribution
 
@@ -53,7 +49,6 @@ The analysis of the 15,349 birth control drug reviews from Drugs.com provided th
 - **Review Volume**: There was a substantial increase in the number of reviews over time, peaking around 2015. This indicates a growing user engagement and reporting on birth control experiences perhaps because people are getting more educated on the different contraceptive methods that are available.
 - **Sentiment Shifts**: The proportion of negative reviews increased significantly over the years, indicating that more users experienced adverse effects or were motivated to report negative experiences. The increase in negative sentiments over time calls for further investigation to determine whether this trend is due to more people adopting these medications, which could reveal variations in how different individuals react to the medications (pharmacodynamics).
 
-These insights offer invaluable perspectives for healthcare stakeholders, aiding in understanding user experiences and improving birth control drug options.
 
 ## Sentiment Analysis Technique
 
