@@ -26,13 +26,13 @@ The analysis of the 15,349 birth control drug reviews from Drugs.com provided th
 
 ## Sentiment Distribution
 
-- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to the myriad side effects associated with birth control.
+- The majority of reviews were negative, with 11,240 negative reviews compared to 4,109 positive reviews. This indicates a general dissatisfaction among users, primarily due to the myriad side effects associated with birth control. However, the high proportion of negative sentiments could also be because people are more inclined to review a drug after a negative experience.
 
 ## Key Topics/Themes in the Reviews
 
-- **Weight Gain and Side Effects**: Many users discussed concerns about weight gain and other general side effects.
-- **Bleeding and Cycle Issues**: A significant number of reviews highlighted problems related to bleeding and menstrual cycles.
-- **Pain and Insertion Issues**: Users also discussed pain, particularly related to birth control device insertion.
+- **Weight Gain and Side Effects**
+- **Bleeding and Cycle Issues**
+- **Pain and Insertion Issues**
 
   It is important to note that even within these common seemingly problematic topics, some reviews discussed the resolution of these problems, reflecting positive sentiments despite the problematic topics.
 
